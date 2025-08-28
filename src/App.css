@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.compare-container {
+  width: 90%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.compare-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.textbox {
+  width: 500px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.textbox.eip {
+  border: 2px solid #1e90ff; /* blue */
+  color: #1e90ff;
+}
+
+.textbox.poa {
+  border: 2px solid #ff0000; /* red */
+  color: #ff0000;
+}
+
+.compare-btn {
+  padding: 10px 20px;
+  border: 2px solid green;
+  background: white;
+  color: green;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.compare-btn:hover {
+  background: green;
+  color: white;
+}
+
+.compare-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.compare-row {
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.field-label {
+  font-weight: bold;
+}
+
+.field-box {
+  height: 25px;
+  border-radius: 5px;
+}
+
+.field-box.eip {
+  border: 2px solid #1e90ff;
+}
+
+.field-box.poa {
+  border: 2px solid #ff0000;
+}
+
+
+.field-label {
+  font-weight: bold;
+}
+
+.field-box {
+  min-height: 140px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
+  white-space: pre-wrap;
+  resize: vertical;
+}
+
+.field-box.eip {
+  border: 2px solid #1e90ff;
+}
+
+.field-box.poa {
+  border: 2px solid #ff0000;
+}
