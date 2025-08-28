@@ -73,6 +73,9 @@ const handleParse = () => {
         {fields.map((field) => (
           <div key={field} className="compare-row">
             <div className="field-label">{field}</div>
+            <div className='filed-data-shown'>
+
+            
             <textarea
               className="field-box eip"
               value={formatValue(eipData[field])}
@@ -83,6 +86,7 @@ const handleParse = () => {
               value={formatValue(poaData[field])}
               readOnly
             />
+            </div>
           </div>
         ))}
       </div>

@@ -66,13 +66,18 @@
 
 .compare-row {
   display: grid;
-  grid-template-columns: 150px 1fr 1fr;
+  grid-template-columns: 200px 2fr 1fr;
   align-items: center;
   gap: 10px;
 }
 
 .field-label {
   font-weight: bold;
+ 
+}
+.filed-data-shown{
+ display: flex;
+  flex-direction: column;
 }
 
 .field-box {
@@ -94,12 +99,14 @@
 }
 
 .field-box {
-  min-height: 40px;
+  min-height: 20px;
   border-radius: 5px;
+  width: 100%;
   padding: 5px;
   font-size: 12px;
   white-space: pre-wrap;
   resize: vertical;
+  margin: 1px;
 }
 
 .field-box.eip {
