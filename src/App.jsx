@@ -15,6 +15,7 @@ function App() {
   "userDetails",
   "employmentStatus",
   "occupation",
+  "employmentDetails",
   "legalDocuments",
   "contactDetails",
   "expectedIncome",
