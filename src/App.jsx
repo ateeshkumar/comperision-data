@@ -13,11 +13,12 @@ function App() {
   "userId",
   "createdTimestamp",
   "userDetails",
-  "userStateDetails",
   "employmentStatus",
+  "occupation",
   "legalDocuments",
-  "addresses",
-  "tags",
+  "contactDetails",
+  "expectedIncome",
+  "tags"
 ];
 
 const handleParse = () => {
