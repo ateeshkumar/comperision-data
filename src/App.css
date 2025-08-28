@@ -99,14 +99,12 @@
 }
 
 .field-box {
-  min-height: 20px;
-  border-radius: 5px;
   width: 100%;
-  padding: 5px;
-  font-size: 12px;
-  white-space: pre-wrap;
-  resize: vertical;
-  margin: 1px;
+  resize: none;      /* prevent manual resize */
+  overflow: hidden;  /* hide scrollbars */
+  min-height: 32px;  /* optional */
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 .field-box.eip {
@@ -115,4 +113,17 @@
 
 .field-box.poa {
   border: 2px solid #ff0000;
+}
+
+.poadata{
+  border: 2px solid #ff0000;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 1px;
+}
+.eipdata{
+  border: 2px solid #1e90ff;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 1px;
 }

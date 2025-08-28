@@ -76,17 +76,26 @@ const handleParse = () => {
             <div className="field-label">{field}</div>
             <div className='filed-data-shown'>
 
-            
-            <textarea
+            <div className="eipdata">{formatValue(eipData[field])}</div>
+            {/* <textarea
               className="field-box eip"
               value={formatValue(eipData[field])}
               readOnly
-            />
-            <textarea
+              onInput={(e) => {
+        e.target.style.height = "auto";
+        e.target.style.height = e.target.scrollHeight + "px";
+      }}
+            /> */}
+            {/* <textarea
               className="field-box poa"
               value={formatValue(poaData[field])}
               readOnly
-            />
+              onInput={(e) => {
+        e.target.style.height = "auto";
+        e.target.style.height = e.target.scrollHeight + "px";
+      }}
+            /> */}
+            <div className="poadata">{formatValue(poaData[field])}</div>
             </div>
           </div>
         ))}
